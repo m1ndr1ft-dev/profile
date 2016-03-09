@@ -1,95 +1,45 @@
-#posts_wrapper {
-  padding: 3em 0;
-  .post {
-    text-align: center;
-    .date {
-      font-size: .9em;
-      margin: 0;
-    }
-    h2 {
-      margin: 0;
-      font-size: 2em;
-      text-transform: uppercase;
-    }
-    hr {
-      margin: 3em auto;
-    }
-  }
+.col-1, .col-2, .col-3 {
+  float: left;
 }
-
-//---------------Project Show
-
-#post_show_content {
-  header {
-    text-align: center;
-    .date {
-      font-size: .9em;
-      color: $light;
-      margin: 0;
-    }
-    h1 {
-      margin: 0;
-    }
-  }
-  hr {
-    margin: 2em auto;
-  }
+.col-1 {
+  width: 45%;
+  padding: 0 5% 0 2.5%;
 }
+.col-2, .col-3 {
+  width: 27.5%;
+  padding: 0 2.5%;
+}
+.homepage_content {
+  h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.35em;
+    font-weight: 400;
+    margin-bottom: .5em;
 
-#share_box {
-  text-align: right;
+  }
+  a {
+    color: $highlight;
+  }
+  .date {
+    font-size: .85em;
+    margin-bottom: 2em;
+    color: $light;
+  }
   p {
-    padding: 0 0 1em 0;
-    margin: 0;
-    text-transform:  uppercase;
-    color: $dark;
-    font-size: .8em;
-  }
-  i {
-    padding: 1em 0;
+    margin: 0 0 .75em 0;
   }
 }
-
-//---------------Pagination
-
-.pagination:before,
-.pagination:after {
-  content: " ";
-  display: table;
-}
-
-.pagination:after {
-  clear: box;
-}
-
-.pagination {
-  text-align: center;
-  margin: 0 0 3em 0;
-  a, .previous_page, .current, .next_page {
-    padding: .75em 1em;
-    margin: 0 .5em;
-    border-radius: .15em;
-    line-height: 20px;
-    text-decoration: none;
-    background: $white;
+.about {
+  padding: 0 7.5% 0 0;
+  a {
+    color: $highlight;
     font-weight: 700;
-    font-size: .7em;
-    font-style: normal;
-    color: $dark;
     &:hover {
-      background: $highlight;
-      color: $white;
-    }
-  }
-  .current {
-    background: $highlight;
-    color: $white;
-  }
-  .disabled {
-    color: #C0C0C0;
-    &:hover {
-      color: #C0C0C0;
-      background: $white;
+      color: $hover;
     }
   }
 }
+

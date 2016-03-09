@@ -4,21 +4,32 @@
 	<title>Andrey Arias - Web Dev, Engineer, Pen Tester</title>
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  	<title>Profile</title>
-  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
  	<%= csrf_meta_tags %>
 </head>
 <body>
+
 	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Andrey Arias</a>
+		<%= link_to "M1ndr1ft dev", root_path, class: "name" %>
 		<nav>
-		<a href="blog.html">Blog</a>
+		<%= link_to "Blog", posts_path %>
 		<a href="#">Projects</a>
 		<a href="contact.html">Contact Me</a>
 		</nav>
 	</header>
+
 	<%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&copy;2016 Andrey Arias</p>
+		<nav>
+			<a href="https://www.linkedin.com/in/andreyarias" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/m1ndr1ft-dev" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="#" target="_blank"><i class="fa fa-twitter" ></i></a>
+			<a href="#" target="_blank"><i class="fa fa-steam"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>
