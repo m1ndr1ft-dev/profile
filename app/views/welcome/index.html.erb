@@ -1,8 +1,8 @@
 <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 about homepage_content">
-      <h2>About</h2>
+      <h2>Hellooo!!</h2>
       <hr>
-      <p>Hello, I am a software developer &amp; engineer living in sunny San Diego, California</p>
+      <p>I am a software developer &amp; engineer living in sunny San Diego, California</p>
       <p>I enjoy being creative and getting to learn something new every day.</p>
       <p>Throughout the day you would find me working on many crazy development ideas
        ranging from mobile to web to software applications.</p>
@@ -21,11 +21,9 @@
     <div class="col-3 homepage_content">
       <h2>Projects</h2>
       <hr>
-      <h3><a href="#">TODO List!</a></h3>
-      <p class="date">Friday March 4th</p>
-      <h3><a href="#">TODO List!</a></h3>
-      <p class="date">Friday March 4th</p>
-      <h3><a href="#">TODO List!</a></h3>
-      <p class="date">Friday March 4th</p>
+      <% @projects.each do |project| %>
+        <h3><%= link_to project.title, project %></h3>
+        <p><%= project.created_at.strftime("%A, %b, %d") %></p>
+      <% end %>
     </div>
   </div>
