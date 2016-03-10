@@ -5,10 +5,6 @@ class ProjectsController < ApplicationController
     @projects = Project.all.order("created_at desc")
   end
 
-  def show
-    @project = Project.find(params[:id])
-  end
-
   def new
     @project = Project.new
   end
@@ -23,12 +19,16 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def show
+    @project = Project.friendly.find(params[:id])
+  end
+
   private
   def find_project
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
   def project_params
-    params.require(:project).permit(:title, :description, :link)
+    params.require(:project).permit(:title, :description, :link, :slug)
   end
 
 end
