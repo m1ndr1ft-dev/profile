@@ -18,6 +18,7 @@
 		<%= link_to "Blog", posts_path %>
 		<%= link_to "Projects", projects_path %>
 		<%= link_to "Get in Touch", new_contact_path %>
+		<!-- <%= link_to "Resume", resume_path %> -->
 		<% if user_signed_in? %>
 			<%= link_to "Get Out!", destroy_user_session_path, method: :delete %>
 		<% end %>
