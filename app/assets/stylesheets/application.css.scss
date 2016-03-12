@@ -109,6 +109,16 @@ i {
   display: none;
 }
 
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+}
+
+#image {
+  border: 1px solid $white;
+  text-align: center;
+}
+
 #contact_video {
 
 }
