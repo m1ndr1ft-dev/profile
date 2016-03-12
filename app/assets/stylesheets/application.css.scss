@@ -6,14 +6,16 @@ $highlight: #7f9eb2;
 $border: #E9E9E9;
 $hover: #00dffc;
 $white: #FFFFFF;
+$background: #4FB0C6;
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   // font-family: 'Amatic SC', cursive;
-  font-family: 'Poiret One', cursive;
+  // font-family: 'Poiret One', cursive;
   // font-family: 'Indie Flower', cursive;
 }
 
@@ -124,6 +126,8 @@ i {
 }
 
 #main_navigation {
+  // background: #1F2124;
+  // opacity: 0.6;
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
   .name {
@@ -156,6 +160,7 @@ i {
 }
 
 #main_footer {
+  // background: $background;
   padding: 2.5em 5%;
   border-top: 1px solid #E9E9E9;
   .copyright {
