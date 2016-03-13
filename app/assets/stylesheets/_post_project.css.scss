@@ -12,12 +12,12 @@
       text-transform: uppercase;
     }
     hr {
-      margin: 3em auto;
+      margin: 6em auto;
     }
   }
 }
 
-//---------------Project Show
+//---------------Project/Blog Show
 
 #post_show_content {
   header {
@@ -34,12 +34,17 @@
   hr {
     margin: 2em auto;
   }
+  #content {
+    p {
+      font-size: 1.1em;
+    }
+  }
 }
 
 #share_box {
   text-align: center;
   p {
-    padding: 0 0 1em 0;
+    padding: 1em 0 0 0;
     margin: 0;
     text-transform:  uppercase;
     color: $dark;

@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 3)
+    @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 6)
 	end
 
 	def new
@@ -24,6 +24,10 @@ class PostsController < ApplicationController
     @post = Post.friendly.find(params[:id])
   end
 
+  def edit
+
+  end
+
   def update
     if @post.update post_params
       redirect_to @post, notice: "Blog post was successfully updated!"
@@ -39,12 +43,12 @@ class PostsController < ApplicationController
 
 	private
 
-	def post_params
-		params.require(:post).permit(:title, :content, :slug, :image)
-	end
-
-  def find_post
+	def find_post
     @post = Post.friendly.find(params[:id])
+  end
+
+  def post_params
+    params.require(:post).permit(:title, :content, :image, :slug)
   end
 
 end

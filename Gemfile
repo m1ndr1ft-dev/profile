@@ -17,6 +17,7 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'mail_form'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 group :development, :test do
   gem 'byebug'

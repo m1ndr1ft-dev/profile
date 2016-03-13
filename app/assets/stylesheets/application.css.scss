@@ -1,3 +1,5 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import 'normalize';
 
 $dark: #274c5e;
@@ -7,6 +9,7 @@ $border: #E9E9E9;
 $hover: #00dffc;
 $white: #FFFFFF;
 $background: #4FB0C6;
+$black: #000000;
 
 * {
   box-sizing: border-box;
@@ -14,9 +17,6 @@ $background: #4FB0C6;
 
 body {
   font-family: 'Raleway', sans-serif;
-  // font-family: 'Amatic SC', cursive;
-  // font-family: 'Poiret One', cursive;
-  // font-family: 'Indie Flower', cursive;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -65,7 +65,7 @@ hr {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $dark;
   &:hover {
     color: $hover;
@@ -116,6 +116,10 @@ i {
   padding: 1em 0;
 }
 
+.paginate {
+  text-align: center;
+}
+
 #image {
   border: 1px solid $white;
   text-align: center;
@@ -126,33 +130,36 @@ i {
 }
 
 #main_navigation {
-  // background: #1F2124;
-  // opacity: 0.6;
+  font-weight: 700;
+  background: $black;
+  opacity: 0.8;
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
   .name {
-    font-weight: 700;
-    font-size:  .9em;
-    letter-spacing: 4px;
+    font-size:  1em;
+    letter-spacing: 5px;
     text-transform: uppercase;
     border: 2px solid $border;
     padding: 1rem;
     text-decoration: none;
-    color: $dark;
+    color: $white;
     float: left;
   }
   nav {
     float: right;
     padding-top: 1.5em;
+    padding-right: 5em;
     a {
-      margin: 0 1rem;
-      font-size: 1rem;
+      color: $white;
+      margin: 0 2rem;
     }
   }
 }
 
 #page_title {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 6px;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px solid $border;
@@ -160,7 +167,6 @@ i {
 }
 
 #main_footer {
-  // background: $background;
   padding: 2.5em 5%;
   border-top: 1px solid #E9E9E9;
   .copyright {
@@ -173,6 +179,10 @@ i {
   }
 }
 
+textarea {
+  min-height: 20em;
+}
+
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   max-width: 100%;
@@ -181,10 +191,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   padding: 1em;
   margin: .5em 0 2em 0;
 
-}
-
-textarea {
-  min-height: 20em;
 }
 
 input[type="submit"], .button {
@@ -212,7 +218,6 @@ input[type="submit"], .button {
   margin: 4em 0 0 0;
   text-align: center;
 }
-
 
 @import 'welcome';
 @import 'post_project';
