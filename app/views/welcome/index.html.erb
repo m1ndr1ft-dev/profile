@@ -1,6 +1,6 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <h2>Hey There !!</h2>
+    <h2>Hello World</h2>
     <hr>
     <p>
       I am a software developer &amp; engineer living in sunny San Diego, California.
@@ -14,7 +14,7 @@
     <p>
       On my spare time I like to be in the outdoors, spend time with my lovely wife
       and our two crazy pugs, go to the gym, spend time working as a recording
-      engineer/producer in my personal <a href="#">recording studio</a>, work on
+      engineer/producer in my personal recording studio, work on
       my pen test lab, and most importantly read, read, read!!!!.
     </p>
     <p>
@@ -27,7 +27,7 @@
     <hr>
     <% @posts.each do |post| %>
       <h3><%= link_to post.title, post %></h3>
-      <p><%= post.created_at.strftime("%A, %b, %d") %></p>
+      <p><small><%= post.created_at.strftime("%A, %b, %d") %></small></p>
     <% end %>
   </div>
   <div class="col-3 homepage_content">
@@ -35,7 +35,7 @@
     <hr>
     <% @projects.each do |project| %>
       <h3><%= link_to project.title, project %></h3>
-      <p><%= project.created_at.strftime("%A, %b, %d") %></p>
+      <p><small><%= project.created_at.strftime("%A, %b, %d") %></small></p>
     <% end %>
   </div>
 </div>

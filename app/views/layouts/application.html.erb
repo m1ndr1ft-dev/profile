@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<header id="main_navigation" class="clearfix">
-			<%= link_to "Andrey Arias", root_path, class: "name" %>
+			<%= link_to "<Andrey Arias/>", root_path, class: "name" %>
 			<nav>
 			<%= link_to "Blog", posts_path %>
 			<%= link_to "Projects", projects_path %>
@@ -29,11 +29,11 @@
 		<% elsif alert %>
 			<p class="alert"><%= alert %></p>
 		<% end %>
-
-		<%= yield %>
-
+		<nav id="main_content">
+			<%= yield %>
+		</nav>
 		<footer id="main_footer">
-			<p class="copyright">&copy;2016 Andrey Arias</p>
+			<p class="copyright">&copy;Copyright 2016, Andrey Arias</p>
 			<nav>
 				<a href="https://www.linkedin.com/in/andreyarias" target="_blank"><i class="fa fa-linkedin"></i></a>
 				<a href="https://github.com/m1ndr1ft-dev" target="_blank"><i class="fa fa-github"></i></a>

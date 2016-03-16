@@ -2,10 +2,6 @@
   padding: 3em 0;
   .post {
     text-align: center;
-    .date {
-      font-size: .9em;
-      margin: 0;
-    }
     h2 {
       margin: 0;
       font-size: 2em;
@@ -24,7 +20,7 @@
     text-align: center;
     .date {
       font-size: .9em;
-      color: $light;
+      color: $black !important;
       margin: 0;
     }
     h1 {
@@ -83,9 +79,8 @@
   clear: box;
 }
 
-.pagination {
+.paginate {
   text-align: center;
-  margin: 0 0 3em 0;
   a, .previous_page, .current, .next_page {
     padding: .75em 1em;
     margin: 0 .5em;
