@@ -14,10 +14,10 @@
 		<header id="main_navigation" class="clearfix">
 			<%= link_to "<Andrey Arias/>", root_path, class: "name" %>
 			<nav>
-			<%= link_to "Blog", posts_path %>
 			<%= link_to "Projects", projects_path %>
-			<%= link_to "Get in Touch", new_contact_path %>
 			<%= link_to "Resume", static_pages_resume_path %>
+			<%= link_to "Get in Touch", new_contact_path %>
+			<%= link_to "Blog", posts_path %>
 			<% if user_signed_in? %>
 				<%= link_to "Get Out!", destroy_user_session_path, method: :delete %>
 			<% end %>
@@ -35,10 +35,11 @@
 		<footer id="main_footer">
 			<p class="copyright">&copy;Copyright 2016, Andrey Arias</p>
 			<nav>
+			<i class="fa fa-envelope-o"> andreyarias.dev@gmail.com</i>
 				<a href="https://www.linkedin.com/in/andreyarias" target="_blank"><i class="fa fa-linkedin"></i></a>
 				<a href="https://github.com/m1ndr1ft-dev" target="_blank"><i class="fa fa-github"></i></a>
 				<a href="https://twitter.com/dotdotdev" target="_blank"><i class="fa fa-twitter" ></i></a>
-				<a href="https://steamcommunity.com/id/dotdev" target="_blank"><i class="fa fa-steam"></i></a>
+				<!-- <a href="https://steamcommunity.com/id/dotdev" target="_blank"><i class="fa fa-steam"></i></a> -->
 			</nav>
 		</footer>
 	</body>

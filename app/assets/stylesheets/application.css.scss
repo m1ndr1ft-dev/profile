@@ -112,6 +112,10 @@ i {
   padding: 1em 0;
 }
 
+.message_video {
+  text-align: center;
+}
+
 #main_content {
 //TODO
 }
@@ -132,11 +136,11 @@ i {
   padding: 1.5em 10% 1.5em 5%;
   border-bottom: 1px solid $border;
   .name {
-    font-weight: 600;
-    font-size:  .75em;
+    font-weight: 500;
+    font-size:  1em;
     letter-spacing: 10px;
     text-transform: uppercase;
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
     text-decoration: none;
     color: $white;
     float: left;
@@ -175,6 +179,7 @@ i {
     margin: 0;
   }
   nav {
+    font-size: .9em;
     float: right;
     a {
       i {

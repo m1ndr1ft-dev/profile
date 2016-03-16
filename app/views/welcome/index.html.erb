@@ -8,7 +8,7 @@
     <p>
       I enjoy being creative and getting to learn something new every day. I also have
       a crazy entrepreneurial mind, and a crazy thirst for knowledge, that is why
-      throughout the day you would find me working on many crazy development ideas
+      throughout the day you will find me working on many crazy development ideas
       ranging from mobile to web to software applications.
     </p>
     <p>
@@ -23,19 +23,19 @@
     </p>
   </div>
   <div class="col-2 homepage_content">
-    <h2>Blog</h2>
-    <hr>
-    <% @posts.each do |post| %>
-      <h3><%= link_to post.title, post %></h3>
-      <p><small><%= post.created_at.strftime("%A, %b, %d") %></small></p>
-    <% end %>
-  </div>
-  <div class="col-3 homepage_content">
     <h2>Projects</h2>
     <hr>
     <% @projects.each do |project| %>
       <h3><%= link_to project.title, project %></h3>
       <p><small><%= project.created_at.strftime("%A, %b, %d") %></small></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+  <h2>Blog</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <h3><%= link_to post.title, post %></h3>
+      <p><small><%= post.created_at.strftime("%A, %b, %d") %></small></p>
     <% end %>
   </div>
 </div>
