@@ -70,8 +70,7 @@ a {
 }
 
 i {
-  color: $white;
-  margin-left: 1em;
+  color: $dark;
   padding-top: .2em;
   &:hover {
     cursor: pointer;
@@ -177,6 +176,12 @@ i {
   }
   nav {
     float: right;
+    a {
+      i {
+        color: $white !important;
+        margin-left: 1em;
+      }
+    }
   }
 }
 
