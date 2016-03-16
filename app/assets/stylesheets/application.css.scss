@@ -116,17 +116,9 @@ i {
   text-align: center;
 }
 
-#main_content {
-//TODO
-}
-
 #image {
   border: 1px solid $white;
   text-align: center;
-}
-
-#contact_video {
-//TODO
 }
 
 #main_navigation {
@@ -181,6 +173,9 @@ i {
   nav {
     font-size: .9em;
     float: right;
+    i {
+      color: $white;
+    }
     a {
       i {
         color: $white !important;
